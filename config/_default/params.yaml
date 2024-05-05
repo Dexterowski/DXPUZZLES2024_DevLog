@@ -33,7 +33,7 @@ palette: orange # Default palette. Optional. You'll need to clear the browser ca
 
 # color: dark # light, dark or auto. Default to auto.
 
-# fullWidth: true # Full width.
+fullWidth: false # Full width.
 # fixedHeader: false # Turn on/off fixed header.
 
 dateFormat: ":date_long"
@@ -44,15 +44,15 @@ googleAdsense:
 # math: true # Enable math globally.
 # toc: false # Disable TOC globally.
 # tocPosition: content
-# breadcrumb: false # Disable breadcrumb
+breadcrumb: false # Disable breadcrumb
 # breadcrumbDivider: > # Breadcrumb divider
 # diagram: true
 # socialShare: false # disable social network sharing
-# searchBar: false # disable search-bar
+searchBar: false # disable search-bar
 
 # poweredBy: false # Whether to show powered by.
 
-# readingTime: false # Whether to display the reading time.
+readingTime: false # Whether to display the reading time.
 # postDate: false # Whether to display the post date in the post meta section.
 
 # featuredPostCount: 10 # The number of featured posts shown in sidebar. Turn off by setting it to false.
@@ -84,7 +84,7 @@ viewer: true # Image Viewer
 # rss: home # link the RSS button to homepage all the times.
 
 sidebar:
-  #fixed: true
+  fixed: false
   archives: false # Enable archives widget
   taxonomiesToggle: false # Disable taxonomy toggle
   categories: false # Enable categories widget
@@ -94,7 +94,7 @@ sidebar:
   postsToggle: false # Disable posts toggle
   featuredPosts: false # Enable featured posts widget
   recentPosts: false # Enable featured posts widget
-  # collapsed: true # Collapse sidebar widgets by default on small screens.
+  collapsed: true # Collapse sidebar widgets by default on small screens.
 
 codeBlock:
   # maxLines: 8
@@ -103,16 +103,16 @@ codeBlock:
 post:
   # excerpt: description
   # excerptMaxLength: 120
-  # copyright: false # Whether to display copyright section on each post.
+  copyright: false # Whether to display copyright section on each post.
   # plainifyExcerpt: false # Format excerpt in HTML if false.
   featuredImage: true # Show the featured image above the content.
-  numberifyHeadings: true # Count headings automatically.
+  numberifyHeadings: false # Count headings automatically.
   # numberifyHeadingsEndLevel: 4 # The depth of headings to count. Default to 6.
   numberifyHeadingsSeparator: . # The separator between of number and headings.
   # tocStyleType: decimal # The TOC's CSS list-style-type property.
   # imageTitleAsCaption: true
-  # panel: false # Disable the post panel.
-  # nav: false # Disable post navigations.
+  panel: true # Disable the post panel.
+  nav: false # Disable post navigations.
   # The page position after clicking the read more button, read more from content if true. Default to the beginning of page.
   # It supports only of the manual summaries spliting via <!--more-->.
   # readMoreFromContent: true
