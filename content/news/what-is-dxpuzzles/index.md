@@ -255,7 +255,56 @@ https://steamuserimages-a.akamaihd.net/ugc/906820314218576220/0F1E22338E867F4140
 <br>
 Main Menu - here the modifications were very limited, the only thing I could change was the background.</div>
 
-Full list of changes introduced by my DX PUZZLES gamemode in Garry's Mod - (TODO)
+
+{{% bs/collapse "Full list of changes introduced by my DX PUZZLES gamemode in Garry's Mod" info %}}
+
+* Addon checker - you must have any addons disabled to play the gamemode/map
+* Gamemode checker - as above but it checks if you have correct gamemode active
+* Shield Regeneration
+* New healthkit system
+* Picking up items when pressed "E" (default is when you touch them)
+* New UI
+* Objective System
+* Notes System
+* New weapons
+* * MP5
+* * P99
+* * RPG
+* * Grenade Launcher EX41
+* * M16
+* * AK47
+* * Desert Eagle
+* * Glock 18
+* * M1 Garand
+* * Railgun
+* * L96 Sniper Rifle
+* * AR10 Automatic Sniper Rifle
+* * Remington 870
+* * Shovel Melee Weapon
+* * Frypan Melee Weapon
+* * Beer Bottle "Tatra" Melee Weapon
+* * *AA12?* - it is bugged IIRC
+* Singleplayer helper
+* Singleplayer enhancer - you can toggle this on/off, it randomizes new weapons fro enemies for example in HL2 Campaing
+* Gamerules entity - set of map rules (ex. should health regenerate, starting health, should flashlight can be turned on etc.
+* dx_message entity - display enhanced messages to players
+* dx_timetrigger entity - can be used to trigger something on the map when time in real world will hit desired hours & minutes value
+* Custom NPCs
+* Custom projectiles
+* Weapons are deploying magazines while reloading
+* Dynamic player camera while reloading
+* Display enemy/ally NPC info
+* Display player info
+* Scoring system
+* Puzzles solved scoring system
+* Improved NPC aiming, shooting
+* Stamina system
+* New falldamage, fall camera effects
+* New weapon switching system
+* Server-side ragdolls
+
+
+{{% /bs/collapse %}}
 
 ### What is the current status of the DX_CIRATS3 map?
 
@@ -336,4 +385,5 @@ Object grabbing in the style of Half-Life 2. Everything was going very well. The
 
 When I noticed problems with game synchronization I realized that I propably couldn't do i t all by myself from scratch. At that time I didn't know yet that the [P2P](https://pl.wikipedia.org/wiki/Peer-to-peer) network model was one of the bigger obstacles for me, and this game should be made on a [Server-Auth](https://www.gabrielgambetta.com/client-server-game-architecture.html) model.
 
-So, I returned to programming in Garry's Mod and finishing that project. Only gamemode, map isn't finished to todays day. I fixed bunch of bugs and wanted to bring it to a playable state.
+So, I returned to programming in Garry's Mod and finishing that project. Only gamemode, map isn't finished to todays day. I fixed bunch of bugs and wanted to bring it to a playable state but for now I think it will need a lot of tweaking
+
