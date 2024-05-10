@@ -518,3 +518,13 @@ Continuing what I started on the Source engine, everything is ready – I would 
 It's a pity that Facepunch in S&Box got rid of the old entity system and replaced it with the new scene system. They're turning it into another Unity or Roblox. So I'm forced to create this on Unreal Engine if I want DX PUZZLES to use a modern engine and lighting. I think it will be very difficult to geve people the ability to create their own content like maps, as it was with Sven Coop.
 
 So that's **end of the story**, and you've learned that I've been standing still for a few years now and don't know what to do next with this project.
+
+## Summary - how I want DX PUZZLES to look like?
+
+I do not want to create another Roblox or S&Box or Garry's Mod. I would have a a base game which will be constantly updated. Without any main campaing, any storyline. I want to community to build the levels, maps with storyline or without. I want to be something like a database of maps which you can browse and play with your friends that one which looks fun.
+
+In novadays something like "modding" do not exists. People who want create something own they are switching to Unity, Godot or any other game engine. I would want to give the players a something what is playable and has all game features needed. 
+
+Features that would allow players to launch an editor and start creating their own maps, storylines, or perhaps just a level focused on climbing and performing technical jumps? Something like a 3D platformer, or maybe... recreate levels from old PlayStation 1 games like Tomb Raider and give players the opportunity to experience Lara Croft's story but with friends? Wouldn't it be fun?
+
+> Ekhm, by the way we're talking about old Tomb Raider. Did I mention that I tried to do [Tomb Raider 2: Reloaded on Source Engine?](https://www.moddb.com/news/tomb-raider-2-reloaded-started-great-wall-map-in-98) I am not sure but this was the first one idea about re-making the old Tomb Raider, isn't it? Mine was in 2010 and second one started in 2016 [but on Unreal Engine](https://tombraider-dox.com/) and it looks like abandoned because the latest post is from 2017.
