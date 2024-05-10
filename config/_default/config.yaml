@@ -1,7 +1,7 @@
-baseURL: https://hbs-skeleton.netlify.app/
+baseURL: https://www.dxpuzzles.com
 title: DX PUZZLES 2024
 theme: github.com/razonyang/hugo-theme-bootstrap
-copyright: 'Copyright © 2016-{year} Razon Yang. All Rights Reserved.'
+copyright: 'Copyright © 2024 - DX STUDIO'
 defaultContentLanguage: en
 # hasCJKLanguage: true # Uncomment it if your content contains Chinese/Japanese/Korean Languages.
 # defaultContentLanguageInSubdir: true

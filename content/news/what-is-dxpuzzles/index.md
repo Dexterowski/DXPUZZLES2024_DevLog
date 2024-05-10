@@ -1,14 +1,14 @@
 ---
 # type: docs 
-title: The idea and history of DX PUZZLES
+title: The Idea and History of DX PUZZLES
 date: 2024-05-04T11:34:47+08:00
-featured: true
+featured: false
 draft: false
 comment: false
 toc: false
-reward: true
-pinned: false
-carousel: true
+reward: false
+pinned: true
+carousel: false
 series:
 
 categories:
@@ -17,14 +17,12 @@ tags:
 
 authors:
   - Dexterowski
-images: []
+images: ["images/logo.png"]
 ---
-
-# The history of DX PUZZLES
 
 When I was younger - about 12-13 years old I started to get interested in game developing. My favourite game was Half-Life. I don't remember excatly why and how I started to creating custom maps, but when I tried it I wanted to create more. I never have been a creative person. It was so interesting for me. 
 
-Some time later I found mod for Half=Life which was called [Sven-Coop](https://en.wikipedia.org/wiki/Sven_Co-op). Now it is a standalone game. This mod just added a possibility of cooperation in playing Half Life storyline.   
+Some time later I found mod for Half-Life which was called [Sven-Coop](https://en.wikipedia.org/wiki/Sven_Co-op). Now it is a standalone game. This mod just added a possibility of cooperation in playing Half Life storyline.   
 
 This game was so simple and fun. All PC's was able to run this. The requirements was very low. There was no needed a high-end PC to play this. All you really needed was a group of friends and some free time.
 
@@ -32,9 +30,9 @@ If you finished Half-Life campaing, you will able to download more custom maps m
 
 That was it. When I found this mod (*as I mentioned above, now it is a standalone game*), I found this website with custom maps - I thought that I wanted to give people more custom content with my own ideas, but I was never a good mapper.
 
-{{< alert "info" >}}
+{{% alert info %}}
 Mapper - the person who creates custom maps for games. That's an ancient word. Now someone like that is called **LEVEL DESIGNER**
-{{< /alert>}} 
+{{% /alert%}} 
 
 ![Center](https://i.imgur.com/yh7xxqF.png)
 
@@ -42,16 +40,42 @@ As you can see I started to make my own custom maps for Sven-Coop. They was ugly
 
 I also tried to create maps for Counter-Strike 1.6 (*it was also a mod for Half Life*). I had to get knowledge from somewhere so I found a polish forum called "hlmaps.noskill" or something like that. I created account and as young guy which want to create "big things" started to asking on forum instead of reading tutorials.
 
-Because I get to this mapping forum I met my first "internet friends". They were different from the people I had contact with at school. We had the same approach to life, the same view of the world. I knew that these were the people I wanted to talk to, they were interested in the same thing as me - they were interested in level design, whether for Half Life or Counter-Strike. 
+<div class="alert alert-light"" role="alert">
+<center>
+
+
+![Center](https://all-cs.ru/storage/styles/medium_size/public/screenshots/cs16/cs_rivercliffs_0.jpg)
+![Center](https://all-cs.ru/storage/styles/medium_size/public/screenshots/cs16/cs_rivercliffs_1.jpg?itok=W-43QBvj)
+
+
+<br>
+
+<small>
+
+I found my the only one finished and published map on some russian site - [cs_rivercliffs](https://all-cs.ru/cs16/maps/cs/cs_rivercliffs.html)
+
+</small>
+
+</center>
+</div>
+
+Because I get to this mapping forum I met my first "internet friends". They were different from the people I had contact with at school. We had the same approach to life, the same view of the world and the most important - same hobby. I knew that these were the people I wanted to talk to, they were interested in the same thing as me - they were interested in level design, whether for Half Life or Counter-Strike. 
 
 Two of them are for this day into game development - one guy is making his own games on Unity, second one is author of one of competetive pool maps in CS:GO (now CS2)
 
 We quickly became familiar with each other. We always wanted to create something togheter. We tried to create own mods for Half-Life. Yeah, one was called "2012" as you can see on the screenshot above. I don't remember what was the storyline
 
+<div class="alert alert-light"" role="alert">
+
 ![Center](https://i.imgur.com/ELLVgl7.png#center)
+<br>
+<center><small>
 
 *We're posting our progress on YouTube. My friend modeled this ugly AA12 and I coded it. Yes, I instead of making maps, I was into coding in C++ in Half-Life.* 
 
+</center></small>
+
+</div>
 
 {{< alert "warning" >}}
 Starting your C++ learning with editing existing Half Life SDK code was not a good idea because I still feel the impact of it to this day. I will recommend to start learning from basics, then try to edit someones code.
@@ -72,6 +96,12 @@ What was so distinctive about these maps, why were they so special?
 
 Because they had a lot of secrets. You just spawned in a random building, without any objective, any hints. You have to mess around with this map. I remember when I was free-roaming at this map when I run it for the first time - I accidentaly pressed some hidden button in the wall and something opened. I messaged my friend quickly asking him to join the server to discover the rest of map. 
 
+<center>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/y42aRyz"  ><a href="//imgur.com/a/y42aRyz">Secret City - Secret example</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/ZY41dup"  ><a href="//imgur.com/a/ZY41dup">Secret City - Secret Door Example</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+</center>
+
 {{< gallery images="https://scmapdb.wdfiles.com/local--files/map:secretcity-4/secretcity4-3.jpg,https://scmapdb.wdfiles.com/local--files/map:secretcity-4/0-secretcity4-2.jpg,https://scmapdb.wdfiles.com/local--files/map:secretcity-6/secretcity6b6__31-01-16_13-42-40.jpg,https://scmapdb.wdfiles.com/local--files/map:secret-city-x/secretcityx_sorry.png">}}
 
 {{< gallery images="https://scmapdb.wdfiles.com/local--files/map:secret-city-x/sercretcityx_2.png,https://scmapdb.wdfiles.com/local--files/map:secret-city-x/secretcityx_3.png">}}
@@ -87,6 +117,7 @@ These maps were filled with mysterious, disturbing, creepy strange looking place
 {{% /bs/clearfix %}}
 
 That was the point - no hints, just hunting for a secrets.
+
 
 > Now in 2024 Secret City saga has [remastered version](http://scmapdb.wikidot.com/map:secretcity-saga-remastered) which I didn't play yet. According to description it will not look like these first ones maps. They added into them some "hints for noobs". I must play to give a feedback.
 
@@ -302,7 +333,11 @@ Main Menu - here the modifications were very limited, the only thing I could cha
 * New falldamage, fall camera effects
 * New weapon switching system
 * Server-side ragdolls
+* Hitmarkers
 
+![Center](https://i.imgur.com/2XoEvUP.jpg?width=25%#Center)
+![Center](https://i.imgur.com/U8UY40O.jpeg?width=25%#Center)
+![Center](https://i.imgur.com/Zj8OE4r.jpeg?width=25%#Center)
 
 {{% /bs/collapse %}}
 
@@ -385,5 +420,101 @@ Object grabbing in the style of Half-Life 2. Everything was going very well. The
 
 When I noticed problems with game synchronization I realized that I propably couldn't do i t all by myself from scratch. At that time I didn't know yet that the [P2P](https://pl.wikipedia.org/wiki/Peer-to-peer) network model was one of the bigger obstacles for me, and this game should be made on a [Server-Auth](https://www.gabrielgambetta.com/client-server-game-architecture.html) model.
 
-So, I returned to programming in Garry's Mod and finishing that project. Only gamemode, map isn't finished to todays day. I fixed bunch of bugs and wanted to bring it to a playable state but for now I think it will need a lot of tweaking
+So, I returned to programming in Garry's Mod and finishing that project. Only gamemode, map isn't finished to todays day. I fixed bunch of bugs and wanted to bring it to a playable state but for now I think it will need a lot of tweaking.
 
+## DX PUZZLES 2024 - Unreal Engine
+
+This year (2024) I decided to revisit this project. I watched videos on Unreal Engine and decided to give it a try. Why? Because this engine has many ready-made features that I would have to build from scratch in Unity. Among them:
+* Server-Authoritative networking
+* Network Prediction Movement
+* Audio Engine (DSP effects, and more)
+
+[and many others](https://www.unrealengine.com/en-US/features).
+
+The difference between Unity and Unreal Engine is that the latter truly focuses on providing developers tools to make an actual game. Unity was focused on making money, they obtained the way to develop their engine onto mobile games mainly than PC. I mentioned real-time lightning (Global Illumination) - the difference between Unity and UE 5 is that in UE5 we can use it without having a graphics card that supports ray tracing. In the Epic Games engine, we also have access to Nanite technology, which relieves the creator when creating 3D models. We don't have to worry about [LOD (Level of Detail)](https://en.wikipedia.org/wiki/Level_of_detail_(computer_graphics))
+
+All of this convinced me to try moving this project to Unreal Engine 5. The only very discouraging thing was the programming language: **C++**. There is also the possibility of visual programming called Blueprints, but the truth is that at a certain stage of game development, we will also have to use C++. A good example is creating our own player movement mode like **sprinting**. We can do this in Blueprints, but we won't code the prediction of movement. So if the second player has a weak internet connection, this movement won't be smooth for both sides - in a very simplified explanation.
+
+I managed to move the simplest things to Unreal Engine 5.3 - such as Main Menu, UI, movement, and a few other things. I also bought the ["HammUEr" plugin](https://forums.unrealengine.com/t/hammuer-a-hammer-worldcraft-map-importer-for-unreal-engine/50145), which allows importing maps from the Source engine into the Unreal Engine editor.
+
+{{% alert warning %}}
+
+The biggest difference between Source and all other engine is that none of them support creating maps based on [CSG](https://pl.wikipedia.org/wiki/CSG). This means that in the engine, we actually only import ready-made models as a map and assemble the map from parts. In the case of Source/GoldSrc, we built maps based on geometric shapes such as cubes, cylindres, cones etc.
+
+{{% /alert %}}
+
+<center>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/0326Nmq"  ><a href="//imgur.com/a/0326Nmq">DX_CIRATS2_V2 but it is Unreal Engine 5</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+</center>
+I managed to import my map DX_CIRATS2_V2 into Unreal Engine 5, and I was impressed how novadays game engine handles lighting. I remember compiling this map on the Source Engine. It took over 8 hours, while here the lighting is calculated in real-time.
+
+<div class="alert alert-dark" role="alert">
+
+<div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/8ftz0a?muted=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+
+In this video, we can see some progress I made, but I would rather demonstrate how global illumination works in real-time using Lumen technology.
+
+</div>
+
+
+<div class="alert alert-dark" role="alert">
+The current progress of what I managed to do in UE5 can be seen in the video below:
+
+<div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/ze9wn3?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+
+</div>
+
+I also started working on climbing ladders to achieve the same movement as in GoldSrc - interestingly, in Source it was completely different but this engine had backward compatibility for old **func_ladder** entities.
+
+The list of things done in UE5:
+
+* Half-Life style movement
+* Water system, swimming
+* Menu
+* Basic UI, HUD
+* Game rules that decide things like whether we can sprint, use a flashlight, how much health we have on spawn etc.
+* Death/Respawn system
+* Player spectating system
+* Map restart system if respawn is disabled and all players are dead - Depends on gamerules setting so each map can have this enabled/disabled
+* Killfeed
+* Stamina(Possibility to turn on/off by gamerules)
+* Steam Sessions (Just steam networking support like invite a friend to the game)
+
+<center>
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/LGhSFbl"  ><a href="//imgur.com/a/LGhSFbl">DX PUZZLES 2024 Swimming System</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Z7xcpDD"  ><a href="//imgur.com/a/Z7xcpDD">DX PUZZLES 2024 Water Splash</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/2B7q90P"  ><a href="//imgur.com/a/2B7q90P">DX PUZZLES 2024 Snow footsteps, sprint, stamina</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+</center>
+I don't have much done, but I did it in a short time. Quite recently, a new version of Unreal Engine 5. was released, which added a lot of new things - including network prediction for physical objects. New movement system for the player, motion matching and many others. In its current state, my code is one big mess. I wanted to start a new project and rewrite it from scratch. The current code had a lot of problems with the initialization order of components. The game often crashed because, for example: the player's HUD was not initialized, and the code tried to access it. I had to learn more about the code execution in UE5. So I started the project from scratch, and for now, I'm focusing on designing basics things like HUD, Player State, Game State, Game Mode to have everything in the right place, store the appropriate information, and refer to those things only when needed.
+
+So, in fact, I'm starting the project from scratch in version 5.4 Maybe not entirely from scratch because I already have some things coded. All I have to do now is to do them better.
+
+To this day, I don't know if I'm doing the right thing by creating this from scratch in Unreal Engine. It has its pros and cos.
+
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Pros:</h4>
+
+* I have access to the latest technologies, Lumen, Nanite, Motion Matching etc.
+* I have access to many photorealistic assets that I can use for free
+* I have full control over what I create - nothing limits me
+
+</div>
+
+
+<div class="alert alert-danger" role="alert">
+  <h4 class="alert-heading">Cons:</h4>
+
+* Unreal Engine does not support BSP/CSG map creation. I have to create them in the Source, Source 2 Hammer Editor, then import them into the UE5
+* Many basics systems such as map logic programming(opening doors etc.) I have to code from scratch, taking into account network synchronization between players.
+
+</div>
+
+Continuing what I started on the Source engine, everything is ready – I would just have to finish, for example, the map DX_CIRATS3 and create new ones. The biggest cons there is the outdated engine without real-time lightning.
+
+It's a pity that Facepunch in S&Box got rid of the old entity system and replaced it with the new scene system. They're turning it into another Unity or Roblox. So I'm forced to create this on Unreal Engine if I want DX PUZZLES to use a modern engine and lighting. I think it will be very difficult to geve people the ability to create their own content like maps, as it was with Sven Coop.
+
+So that's **end of the story**, and you've learned that I've been standing still for a few years now and don't know what to do next with this project.
