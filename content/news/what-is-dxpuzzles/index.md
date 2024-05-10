@@ -207,7 +207,7 @@ The name - "CIRATS" was just a shortened "Ciasna" street name + rats styled map.
 
 This map was very first finished one and clear of any bugs. I do not remember how much time I was making it. If I remember correctly this is the first map which had own gamemode called **DX PUZZLES**. I coded it because of "cheating" I mentioned before. Its job was just to prevent no-cliping, enabling god-mode and other stuff like this. I knew it was easy to bypass but it made it somehow less possible.
 
-This map has one main objective - collect all "wall paiting" pieces. If you want to finish map for 100% you must do the rest like find secret buttons, find all weapons etc. It has a very little amount of hints for players. Things like hidden doors in walls or breakable walls without any hints are making this map very hard to finish. Especially the jumping part.
+This map has one main objective - collect all "wall painting" pieces. If you want to finish map for 100% you must do the rest like find secret buttons, find all weapons etc. It has a very little amount of hints for players. Things like hidden doors in walls or breakable walls without any hints are making this map very hard to finish. Especially the jumping part.
 
 ![Center](https://steamuserimages-a.akamaihd.net/ugc/589160673405719783/7B33C05807B7F8F135D5F0FFBAC8FE6925F75A62/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false#center)
 
