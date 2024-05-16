@@ -1,17 +1,14 @@
-#name: Twoj stary
-# avatar: images/profile.png # Avatar image. Default to "images/profile.webp".
-#bio: 'Gopher, PHPer, Full Stack Engineer.'
-#company: Company # HTML markup are supported, such as: <a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>.
-#location: Earth # HTML markup are supported, such as: <a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>.
-# about: https://razonyang.com # The external about page. The internal about page will be used if not set.
-#params: {
-  # layout: compact
-#}
+name: Dexterowski
+avatar: https://yt3.googleusercontent.com/-5BAj-RF9cL6CqJkb56SZkzflaSFig1f5yPeaJI7dS0npo1wdQVtWUYyrAmR1FdXx9losdUlSg=s176-c-k-c0x00ffffff-no-rj # Avatar image. Default to "images/profile.webp".
+bio: 'Hobbyist Game Dev, YouTube video creator'
+company: DX STUDIO # HTML markup are supported, such as: <a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>.
+location: <a href='https://www.openstreetmap.org/search?query=Kraków'>Kraków</a> # HTML markup are supported, such as: <a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>.
 # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
-#social:
-#  email: razonyang@gmail.com
-#  github: razonyang/hugo-theme-bootstrap
-#  twitter: razonyang
-#  patreon: razonyang
-#  paypal: razonyang
-#  rss: "" # Remove RSS
+social:
+  twitter: Dexterowskii
+  email: kontakt@dexterowski.pl
+  website: https://dxpuzzles.com
+  paypal: dexterowski
+  discord: dexterowski
+  tiktok: dexterowski2137
+  youtube: dexterowskii
