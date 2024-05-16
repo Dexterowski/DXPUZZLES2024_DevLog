@@ -41,3 +41,8 @@ jobs:
            
       - name: Build
         run: hugo --minify --cleanDestinationDir --enableGitInfo --gc --printPathWarnings --templateMetrics
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
