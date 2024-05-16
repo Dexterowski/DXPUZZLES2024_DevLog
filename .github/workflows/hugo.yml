@@ -46,10 +46,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: NPM Install
+        run: npm install
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Install Bootstrap
-        run: npm install @filipecarneiro/hugo-bootstrap-theme
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
