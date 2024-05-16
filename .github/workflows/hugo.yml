@@ -30,7 +30,7 @@ jobs:
         run: npm install
 
       - name: Build for test
-        run: hugo --source exampleSite --baseUrl '/' --cleanDestinationDir --enableGitInfo --gc
+        run: hugo --baseUrl '/' --cleanDestinationDir --enableGitInfo --gc
         if: ${{ false }}
 
       - name: Run htmltest
@@ -40,4 +40,4 @@ jobs:
         if: ${{ false }}
            
       - name: Build
-        run: hugo --source exampleSite --minify --cleanDestinationDir --enableGitInfo --gc --printPathWarnings --templateMetrics
+        run: hugo --minify --cleanDestinationDir --enableGitInfo --gc --printPathWarnings --templateMetrics
