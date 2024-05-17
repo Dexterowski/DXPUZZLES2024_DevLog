@@ -17,6 +17,8 @@ tags:
   - Unreal Engine 5.4
   - Unreal Engine
   - UE
+  - C++
+  - CPP
 authors:
   - Dexterowski
 images: ["images/project-prepare-ue54.png"]
@@ -101,29 +103,17 @@ void ABasePlayer::RestorePlayer()
 ``UpdateHealth()`` body:
 
 ```cpp
-void ABasePlayer::UpdateHealth(float newHealth)
+void ABasePlayer::UpdateHealth_Implementation(float newHealth)
 {
-	if(newHealth < 0)
-		return;
-
-	if(GameState)
-	{
-		if(newHealth >= GameState->MaxPlayerHealth)
-		{
-			Health = GameState->MaxPlayerHealth;
-		}
-		else
-		{
-			Health = newHealth;
-			OnRep_HealthChanged();
-		}
-	}
-		
-	ClientUpdateHealth(newHealth);	
+	const float fClampedHealth = FMath::Clamp(newHealth, 0.0f, GameState->MaxPlayerHealth);
+	
+	Health = fClampedHealth;
+	ClientUpdateHealth(fClampedHealth, GameState->MaxPlayerHealth);
 }
 ```
+This is **Server RPC** which means it is calculated by server, it also should have *validate* function to check if value is in min and max bounds to prevent cheating.
 
-The code checks if health value is correct, checks if it is not greater than max health value set in gamerules. Then we set the health variable and execute RPC ``ClientUpdateHealth`` which looks like this:
+The code checks if health value is correct, checks if it is not greater than max health value set in gamerules. Then we set the health variable and execute client RPC ``ClientUpdateHealth`` which looks like this:
 
 
 ```cpp
@@ -132,9 +122,7 @@ void ABasePlayer::ClientUpdateHealth_Implementation(float newHealth, bool bUpdat
 	ABasePlayerController* PlrController = Cast<ABasePlayerController>(GetController());
 	if(PlrController)
 	{
-		PlrController->GetMainHUD()->UpdateHealthHUD(newHealth);
-		if(bUpdateMaxHealth)
-			PlrController->GetMainHUD()->UpdateMaxHealthHUD(GameState->MaxPlayerHealth);
+		PlrController->GetMainHUD()->UpdateHealthHUD(newHealth, newMaxHealth);
 	}
 }
 ```
@@ -157,3 +145,120 @@ Here's what I've achieved so far on that clear 5.4 project:
 ![](hud.png)
 
 The most important thing is that there are no issues with HUD initialization. Next, I plan to create an object that deals damage to our player, so player will be able to respawn afterward. I also need to create an actor for the spectator... a lot of work awaits me. I somewhat regret starting from scratch, but I know that doing it a second time will turn out better. It always turns out better. Does anyone else feel this way?
+
+Also this is the first time I coded widgets (that's what should it be called by UE) in C++. All I had to do was just make a class derived from ``UUserWidget``, declare "components" like **progress bars, labels**.
+
+```cpp
+class DXPUZZLES2024_API UMainHUD : public UUserWidget
+{
+	GENERATED_BODY()
+
+	
+protected:
+	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
+
+	UPROPERTY(meta=(BindWidget))
+	TObjectPtr<UCanvasPanel> MainCanvas;
+
+	// Health
+	UPROPERTY(meta=(BindWidget))
+	TObjectPtr<UHorizontalBox> HealthBox;
+	
+	UPROPERTY(meta=(BindWidget))
+	TObjectPtr<UProgressBar> HealthBar;
+
+	UPROPERTY(meta=(BindWidget))
+	TObjectPtr<UTextBlock> HealthLabel;
+
+	UPROPERTY(meta=(BindWidget))
+	TObjectPtr<UTextBlock> MaxHealthLabel;
+
+	// Stamina
+
+	UPROPERTY(meta=(BindWidget))
+	TObjectPtr<UHorizontalBox> StaminaBox;
+	
+	UPROPERTY(meta=(BindWidget))
+	TObjectPtr<UProgressBar> StaminaBar;```
+
+```
+Then I just need to make a another child class of my ``UMainHUD`` but this time in the Unreal Editor. 
+
+<center>
+
+![Image Caption](hudineditor.png "This is what it looks like in the editor")
+
+</center>
+
+
+To bind these widgets like progress bar to that specific one in code you must name it **in the same way as in C++**, so as you can see I have the exact same names in the editor and code.
+
+
+### The biggest advantage of making HUD in C++
+
+If you have your HUD coded in low-level in C++ you have more control on things you're doing. You don't have to check for variables if they're valid or not. You don't event must do it in the **Tick** function which is very un-performant. In that way my HUD only changes when I call ``UpdateHealth`` or ``UpdateMaxHealth`` function.
+
+Previously I done my HUD code in the blueprints. It was difficult to do when I had for example health variable coded in C++ in BasePlayer class and wanted to update the HUD from player class. It was almost impossible because firstly C++ is initialized, then blueprints when game starts. 
+
+![Image Caption](oldhudway.png "Old way of updating HUD in my previous project")
+
+The only way of workaround this was calling **Blueprints Native Events**. I was able to execute code when I was changing the variables for example stamina as on the screen.
+
+### Null pointers and fixes
+
+My code not worked as I excepted but it is much better than previous. What was exactly wrong? I implemented in ``BeginPlay`` function initializaiton of HUD widget. 
+
+I also wasn't creating it by ```CreateWidget``` function so it gave me null pointers on clients.
+
+```cpp
+void ABasePlayerHUD::BeginPlay()
+{
+	Super::BeginPlay();
+
+	InitializeHUDWidget();
+}
+
+void ABasePlayerHUD::InitializeHUDWidget()
+{
+	if(HUD_Widget) // check if assigned any
+	{
+		if(HUDInstance) // We don't wanna re-init more than one HUD Widget
+			return;
+		
+		HUDInstance = CreateWidget<UMainHUD>(GetWorld(), HUD_Widget);
+		if(HUDInstance)
+		{
+			HUDInstance->AddToViewport();
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1,15,FColor::Red, TEXT("Failed to create HUD Instance"));
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Fatal, TEXT("HUD CLASS NOT ASSIGNED!"));
+	}
+}
+```
+
+I was thinking it will be executed as first then my RPC called ```UpdateHealth``` will be called. I was wrong. The RPC was first. So I got the workaround to check in RPC if HUD is created and initialized - if not, initialize it, then execute the code which updates the values. Works perfect now.
+
+```cpp
+void ABasePlayerHUD::UpdateHealthHUD(float newHealth, float newMaxHealth)
+{
+	if(!HUDInstance)
+		InitializeHUDWidget();
+	
+	if(HUDInstance)
+	{
+		HUDInstance->UpdateHealth(newHealth, newMaxHealth);
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Red, "Can't get UMainHUD!");
+	}
+}
+```
+
+Now it's time to make player death.
