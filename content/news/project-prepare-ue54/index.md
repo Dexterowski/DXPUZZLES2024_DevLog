@@ -83,6 +83,11 @@ void ABasePlayerHUD::UpdateHealthHUD(float newHealth)
 	
 }
 ```
+
+{{% alert info %}}
+HUD is also spawned by **Spectator Pawn**
+{{% /alert %}}
+
 In my previous project, I had issues referring to these objects among themselves. Often, my code referred to GameState before it was initialized. The same issues applied to the player’s HUD. Therefore, I focused on ensuring that the code referred to this class in the correct place and that the HUD object was always available.
 
 I also misused net-code previously. I struggled with understanding how it works in Unreal Engine, but it’s getting better. I realized that functions updating the player interface, like updating health upon spawn, need to be called only on the Owning Client. That's the reason, these functions must be RPCs (Remote Procedure Calls).
@@ -261,4 +266,4 @@ void ABasePlayerHUD::UpdateHealthHUD(float newHealth, float newMaxHealth)
 }
 ```
 
-Now it's time to make player death.
+Now it's time to make player be able to be dead and respawn.
