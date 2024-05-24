@@ -27,6 +27,12 @@ authors:
 images: ["images/respawn-featured.png"]
 ---
 
+{{< alert "danger" >}}
+
+Please <strong>DO NOT</strong> treat these articles as TUTORIALS. This is DevLog - my adventure with making things in Unreal Engine 5. Thank you. Approach in this text is bad. In next post whole code will be moved into another class.
+
+{{</ alert>}}
+
 # What I want to do?
 
 This is one of the most basic and crucial functionalities of the game itself: player death and the ability to respawn. This feature is present in most multiplayer games. In my case, I also want to introduce a system for spectating other players, depending on whether respawn is enabled and whether the map creator allows it.
