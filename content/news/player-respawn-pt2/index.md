@@ -199,3 +199,4 @@ I finally managed to set up Version Control and can upload changes to **AzureDev
 </center>
 
 yes, I never used branches feature in GitHub, you can laugh but I was always forgetting about it. I must try someday when I will be making a "big feature" in DX PUZZLES.
+

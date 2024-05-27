@@ -8,3 +8,5 @@ require (
 	github.com/razonyang/hugo-theme-bootstrap v1.5.6 // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
+
+replace github.com/razonyang/hugo-theme-bootstrap-skeleton => /themes/hugo-theme-bootstrap-skeleton

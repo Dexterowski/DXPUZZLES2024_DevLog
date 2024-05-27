@@ -226,7 +226,7 @@ pwa:
     name: DX PUZZLES 2024  # Default to site title.
     short_name: DX
     display: fullscreen # Default to standalone.
-    # description:  # Default to site description.
+    description: DEVLOG # Default to site description.
     # theme_color: 
     # background_color: 
 

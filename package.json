@@ -54,6 +54,7 @@
     "mustache": "^4.2.0",
     "onchange": "^7.1.0",
     "postcss-cli": "^9.1.0",
+    "prismjs": "^1.29.0",
     "rtlcss": "^3.5.0",
     "viewerjs": "^1.10.4",
     "workbox-cacheable-response": "^6.4.2",
@@ -62,7 +63,6 @@
     "workbox-routing": "^6.4.2",
     "workbox-strategies": "^6.4.2"
   },
-  "devDependencies": {},
   "name": "hugo-theme-bootstrap-skeleton",
   "version": "0.1.0"
 }
