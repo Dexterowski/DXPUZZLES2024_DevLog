@@ -281,4 +281,31 @@ Stains I am talking about are only appearing when I set indirect on value greate
 
 In baked version it looks UGLY, without any mood, vibe. I assume it is the sort of configuring the Lightmass so it can be fixed. I very like how with so low effort I achieved nice looking map. 
 
+
+I was looking for a fix a bake lighting problem which I described above, but I found how to do a nice "sun shafts" and it looks **PERFECT** and that is I was looking for!
+
+<center>
+
+![](lightshafts.png)
+
+![](lightshafts2.png)
+
 **Unreal Engine does it's job.**
+
+...
+
+...
+
+...
+
+...
+
+
+
+or not, I found leaking ones XD but I will fix that later XD
+
+<center>
+
+![](lightshaftsleaking.png)
+
+</center>
