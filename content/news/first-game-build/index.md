@@ -23,14 +23,13 @@ authors:
   - Dexterowski
 images: ["images/build2.png"]
 ---
-
-Swoją wiedzę której nie mogę znaleźć w internecie pozyskuję z Discorda [Unreal Source](https://discord.gg/unrealsource). Tam pytam o rzeczy których nie wiem. Dowiedziałem się od tej społeczności, że raz na jakiś czas dobrze jest zrobić build gry aby sprawdzić czy wszystko działa jak należy w finalnym produkcie
-
 {{% alert info %}}
 
 <strong>BUILD</strong> - packaged game to executable file which can be run without editor. It is something like "final" product of the game which we have after installation. Do not confuse with for e.x. character build like in MMORPG's
 
 {{% /alert %}}
+
+I am getting most of my knowledge about Unreal Engine from [Unreal Source Discord Server](https://discord.gg/unrealsource). I ask questions there if I do not know something. I found out through this community that we should build our game sometimes to check if everything work as intended in final game product.
 
 
 So I tried to build my game to test it out and... build was successful but I can't run it because of some "fatal error" without any reason, explaintation what you can see on the image below:
