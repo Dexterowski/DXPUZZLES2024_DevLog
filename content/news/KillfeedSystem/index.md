@@ -1,13 +1,13 @@
 ---
 # type: docs 
-title: Killfeed System
+title: KillFeed System
 date: 2024-06-02T11:34:47+08:00
 featured: false
 draft: false
 comment: false
 toc: false
 reward: false
-pinned: true
+pinned: false
 carousel: false
 series:
  
