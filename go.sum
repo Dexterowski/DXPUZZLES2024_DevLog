@@ -1,7 +1,17 @@
+github.com/hugomods/base v0.7.0 h1:KEZ1HrZdkx1Yt8BKE750a+zJOusLz9iefU2clqw6duc=
+github.com/hugomods/base v0.7.0/go.mod h1:hnWCPbVxuhXBwdFax3mmbMlWKmIo/7OP36MCLOyHtT4=
 github.com/hugomods/bootstrap v0.21.2 h1:lu9LHkj7RLxkVp2bX//li2Z/OsG36TGHjlFZG4/p9Tw=
 github.com/hugomods/bootstrap v0.21.2/go.mod h1:3U2SkU7l1+n8/wJZwB8/2phYhvRyFwCMix7pPNJ4U+I=
+github.com/hugomods/bootstrap v0.22.0 h1:ldexottzO6JD7DzbKtPxKB21qoK1CY0amC2KzwD1BNg=
+github.com/hugomods/bootstrap v0.22.0/go.mod h1:3U2SkU7l1+n8/wJZwB8/2phYhvRyFwCMix7pPNJ4U+I=
 github.com/hugomods/icons v0.6.3 h1:2Ra6NU2GOeVvz8vowLq/OZCTzxqhq84MA0TICRBVxeY=
 github.com/hugomods/icons v0.6.3/go.mod h1:cIkSvK6W0q6N4U6n9KGz+QfRWQXAW0INd+1P31gPNGg=
+github.com/hugomods/icons/vendors/bootstrap v0.5.6 h1:4Vj7u52gFUnO+Jj/CqmGfsLroify2aysRpIvgHRNjjI=
+github.com/hugomods/icons/vendors/bootstrap v0.5.6/go.mod h1:Sw1RhQvFcsQlJ5a4SKpp7A0XHDYQ0DK0pQwnnx+l+Ao=
+github.com/hugomods/icons/vendors/font-awesome v0.6.6 h1:rb12roByF9LZfUxBpyhyqenkcX2+VGkYf5jJ/55OPHo=
+github.com/hugomods/icons/vendors/font-awesome v0.6.6/go.mod h1:2IVdmnq+IWCnPFYsvbxq59dTuW3+prPLerpu8Ezobro=
+github.com/hugomods/images v0.10.1 h1:ok3ZUZ63MAcmFuTx2kC5JJ3Sffd420RRW9yO57SFeQA=
+github.com/hugomods/images v0.10.1/go.mod h1:U6Gwj16LKvk66rOMyGFrnF6f0aV8lT89lqOsckOAjYY=
 github.com/razonyang/hugo-theme-bootstrap v1.3.1 h1:M/xtutNGXTSf0lDyCtzGT5aPs/aA1tOxds8sIrMIC6o=
 github.com/razonyang/hugo-theme-bootstrap v1.3.1/go.mod h1:o+IIPL/5wreiTojnN4MsQqKuxbv3fWAQnMhG9geltQo=
 github.com/razonyang/hugo-theme-bootstrap v1.5.6 h1:jTqFOYAVpimWwbUywb0Hy83PMCYEoEVLvwEd6SsZKc0=

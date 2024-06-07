@@ -5,3 +5,9 @@
 #    params:
 #      icon: '<i class="fas fa-fw fa-book"></i>'
 
+
+main:
+  - name: Developer Docs
+    url: /docs/
+    params:
+      icon: '<i class="fas fa-fw fa-book"></i>'
