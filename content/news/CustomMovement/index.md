@@ -126,7 +126,7 @@ void UDXMovementComponent::UpdateFriction(UCorePhysMaterial* PhysMaterial)
 
 ```
 
-As you can see I also added a [console command](../../docs/console-commands/) called ``cl_DisplayMovementInfo`` which will print out debug things like these you can see in the code block. *(yeah I stoled the command naming convention from GoldSrc/Source engine xD because it is easier to remember!)*
+As you can see I also added a [console command]({{< ref "/docs/console-commands">}}) called ``cl_DisplayMovementInfo`` which will print out debug things like these you can see in the code block. *(yeah I stoled the command naming convention from GoldSrc/Source engine xD because it is easier to remember!)*
 
 ``` none
 cl_* - Client command prefix
@@ -376,13 +376,13 @@ For this condition I also should shorten this to individual function...
 
 **Before change:**
 
-{{< video src="UnrealEditor_jQ9WpEHhfK.mp4" autoplay="true" title="Stamina draining jumping BUG" width="100%" controls="false" loop="true" >}}
+<video src="UnrealEditor_jQ9WpEHhfK.mp4" autoplay="true" title="Stamina draining jumping BUG" width="100%" controls="false" loop="true" ></video>
 *I am holding sprint key whole time*
 
 
 **After change:**
 
-{{< video src="UnrealEditor_bqOtEX1y6F.mp4" autoplay="true" title="Stamina draining fix" controls="false" loop="true" width="100%" >}}
+<video src="UnrealEditor_bqOtEX1y6F.mp4" autoplay="true" title="Stamina draining fix" controls="false" loop="true" width="100%" ></video>
 *I am holding sprint key whole time*
 
 
@@ -422,6 +422,6 @@ void UMainHUD::UpdateStamina(float NewStamina, float NewMaxStamina)
 
 I don't know if this is the right solution but... works? Works.
 
-Also made the [console variable](/../../docs/console-commands/) which can adjust the time before fading out the stamina bar
+Also made the [console variable]({{< ref "/docs/console-commands">}}) which can adjust the time before fading out the stamina bar
 
 ``` cl_HUD_StaminaOutDelay ```
