@@ -25,6 +25,7 @@ tags:
 authors:
   - Dexterowski
 
+images: ["images/sprint.png"]
 ---
 
 That's the thing I don't know how to handle because it must be predicted perfectly to gain smooth gameplay. Making custom movement would be easy for a singleplayer game, but things get a lot of more complicated in multiplayer - You won't do this in **Blueprints**. This is the first and basic limitation of visual programming in UE5. That's the reason I've switched to code my game in C++. Firstly, I must have custom movement for my players. Secondly, I want to learn C++ and UE5 API.
