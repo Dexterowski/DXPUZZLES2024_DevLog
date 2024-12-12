@@ -26,7 +26,7 @@ authors:
 The **BrushMovingButtonComponent** is an extended version of the **BrushButtonComponent**, adding functionality for the button to move between positions when pressed and return after a delay. It includes properties to configure movement speed, distance, direction, and events specific to its motion.
 
 <center>
-<video autoplay="true" loop="true" width="100%" src="DXPUZZLES_MovingButton.mp4" title="Title"></video>
+<video autoplay="true" loop="true" width="100%" src="DXPUZZLES_MovingButton.mp4" title="Moving Button"></video>
 </center>
 
 ## Component Properties
@@ -61,7 +61,7 @@ The **BrushMovingButtonComponent** is an extended version of the **BrushButtonCo
 
   <strong>Movement is not predicted!</strong>
   <p>You can use <strong>SMOOTH SYNC</strong> component with BrushMovingComponent to smooth movement! Without it can be laggy when player has poor connection</p>
-  
+
   {{% /alert %}}
 
 ### Audio Properties
