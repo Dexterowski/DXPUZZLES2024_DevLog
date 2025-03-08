@@ -39,3 +39,4 @@ images: ["images/killfeed.png"]
 * ``cl_DisplayMovementInfo (int32)`` - Display movement info such as: Actual Movement Speed
 * ``cl_DisplayStaminaInfo (int32) `` - Display debug info about Stamina
 * ``cl_DebugWater (int32) `` - Displays debug information about player waterlevel, is fully submerged, water touch etc.
+* ``cl_DisplayDamageInfoDebug (int32)`` - Display debug information about taken damage.
